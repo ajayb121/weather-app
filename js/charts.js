@@ -22,7 +22,7 @@ const getData = () => {
 // Function to render or update the Chart using Chart.js
 const renderChart = () => {
   // Get the canvas element by ID
-  const ctx = document.getElementById("myChart");
+  const ctx = document.getElementById("temperatureChart");
 
   // If a previous chart instance exists, destroy it
   if (tempChart) {
