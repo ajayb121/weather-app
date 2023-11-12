@@ -1,6 +1,11 @@
 # Weather-app
 A simple weather app displaying historical data using table and charts.
 
+1. Reads the ambient temperature from OpenWeatherMap API.
+2. Displays datetime and temperature in table and chart.
+3. Displays current temperature.
+4. Check temperature every 10 seconds and store the last 100 results locally. 
+
 ## Getting Started
 
 First, install the dependencies
