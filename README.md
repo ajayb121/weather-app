@@ -1,4 +1,4 @@
-# weather-app
+# Weather-app
 A simple weather app displaying historical data using table and charts.
 
 ## Getting Started
