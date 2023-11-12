@@ -8,12 +8,17 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
+
   <body>
     <h1 class="title">Temperature Table and Chart - London</h1>
     <div class="subtitle">
       <h2>Current Temp:</h2>
       <h2 id="currentTemp"></h2>
     </div>
+
+    <!-- Display Error on API failure -->
+    <p id="error"></p>
+
     <!-- Display Datetime, and temperature in a table -->
     <div class="container">
       <div class="tableWrapper">
@@ -30,6 +35,8 @@
           </tbody>
         </table>
       </div>
+
+      <!-- Display Datetime, and temperature in a chart -->
       <div class="chartWrapper">
         <h2>Charts</h2>
         <canvas id="myChart" aria-label="Temperature Chart" role="img">
@@ -37,8 +44,6 @@
         </canvas>
       </div>
     </div>
-    <!-- Add accessibility
-    https://www.chartjs.org/docs/latest/general/accessibility.html -->
 
     <script type="module" src="./js/index.js"></script>
   </body>
