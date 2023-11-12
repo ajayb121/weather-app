@@ -1,0 +1,57 @@
+body {
+  margin: 0px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td,
+th {
+  border: 1px solid;
+  text-align: center;
+  padding: 5px;
+}
+
+.title {
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px 20px 0;
+}
+
+.subtitle {
+  display: flex; 
+  gap: 10px; 
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.tableWrapper {
+  padding: 20px;
+  border: 1px solid;
+}
+
+.chartWrapper {
+  max-width: 900px; 
+  width: 100%; 
+  text-align: center; 
+  padding: 20px; 
+  border: 1px solid; 
+  height: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .chartWrapper {
+    padding: 10px;
+  }
+}
