@@ -4,7 +4,7 @@
   "description": "A simple weather app using Vanilla JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server"
   },
   "author": "",
   "license": "ISC",

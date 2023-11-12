@@ -4,11 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Temperature Table and Chart</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <h1>Weather App</h1>
-    <script src="index.js"></script>
+    <h1 class="title">Temperature Table and Chart - London</h1>
+    <div class="subtitle">
+      <h2>Current Temp:</h2>
+      <h2 id="currentTemp"></h2>
+    </div>
+    <!-- Display Datetime, and temperature in a table -->
+    <div class="container">
+      <div class="tableWrapper">
+        <h2>Temperature History</h2>
+        <table id="temperatureTable">
+          <thead>
+            <tr>
+              <th>Date Time</th>
+              <th>Temperature</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Table rows will be added dynamically -->
+          </tbody>
+        </table>
+      </div>
+      <div class="chartWrapper">
+        <h2>Charts</h2>
+        <canvas id="myChart" aria-label="Temperature Chart" role="img">
+          <p>Your browser does not support the canvas element.</p>
+        </canvas>
+      </div>
+    </div>
+    <!-- Add accessibility
+    https://www.chartjs.org/docs/latest/general/accessibility.html -->
+
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
